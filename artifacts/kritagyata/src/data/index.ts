@@ -27,66 +27,6 @@ export interface ProjectStats {
 
 export const projects: Project[] = [
   {
-    id: 2,
-    title: "Aarogya Seva — Rural Health Camp",
-    description: "Free medical check-up camps bringing doctors, diagnostic facilities, and essential medicines directly to underserved rural communities.",
-    longDescription: "Access to basic healthcare remains a distant dream for millions living in rural India. Aarogya Seva was our response — a mobile health camp initiative that brings qualified doctors, diagnostic equipment, and medicines directly to villages.\n\nEach camp is a full-day event staffed by volunteer doctors, nurses, and healthcare workers. We conduct general check-ups, eye tests, dental screenings, blood pressure and blood sugar monitoring, and distribute essential medicines free of charge.\n\nIn our most recent camp, we screened over 400 individuals in a single day, identified several cases requiring urgent referral, and connected families with the nearest government health facilities.",
-    category: "Healthcare",
-    year: 2023,
-    imageUrl: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80",
-    beneficiaries: 860,
-    location: "Ahmednagar, Maharashtra",
-    tags: ["health", "rural", "medical", "camp"],
-  },
-  {
-    id: 3,
-    title: "Harit Bharat — Tree Plantation Drive",
-    description: "A large-scale community tree plantation drive to combat deforestation and engage local communities in environmental stewardship.",
-    longDescription: "The Harit Bharat initiative emerged from our concern for declining green cover in peri-urban areas. We organized community plantation drives, working with local schools, panchayats, and forest departments to plant native species along roadsides, school premises, and degraded land.\n\nVolunteers and community members together planted saplings and committed to their upkeep for the first year. We also conducted environmental awareness workshops in schools, introducing children to ecology, climate change, and the importance of trees.\n\nThis project taught us that environmental action is most effective when communities take ownership — and they did.",
-    category: "Environment",
-    year: 2022,
-    imageUrl: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80",
-    beneficiaries: 3200,
-    location: "Pune District, Maharashtra",
-    tags: ["environment", "trees", "community", "nature"],
-  },
-  {
-    id: 4,
-    title: "Ujjwal Kal — Skill Development Workshop",
-    description: "Vocational training and skill-building workshops for unemployed youth, equipping them with practical skills for sustainable livelihoods.",
-    longDescription: "Ujjwal Kal addresses the gap between education and employability. We partnered with local craftspeople, technicians, and entrepreneurs to deliver short-term skill workshops in tailoring, electrical repair, mobile phone servicing, and basic computer literacy.\n\nParticipants received certification upon completion, and we facilitated connections with local businesses for placement or self-employment support. Several participants have since started their own micro-enterprises.\n\nThis program reinforced our belief that dignity comes from economic independence — and that skills, once given, cannot be taken away.",
-    category: "Livelihood",
-    year: 2023,
-    imageUrl: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80",
-    beneficiaries: 320,
-    location: "Solapur, Maharashtra",
-    tags: ["skills", "youth", "livelihood", "employment"],
-  },
-  {
-    id: 5,
-    title: "Annadaan — Food Distribution Drive",
-    description: "Regular food distribution drives providing cooked meals and ration kits to homeless individuals, daily-wage workers, and families in crisis.",
-    longDescription: "During the pandemic, we saw hunger and desperation up close. Annadaan began as an emergency response and has since become a regular monthly initiative.\n\nOur volunteers cook and distribute hot meals to homeless individuals, construction workers, and families experiencing temporary hardship. We also distribute dry ration kits — rice, dal, oil, and spices — enough to sustain a family for two weeks.\n\nEvery distribution drive is a reminder that food is not just sustenance — it is dignity. We do not merely hand over packets; we sit, talk, and listen.",
-    category: "Food & Nutrition",
-    year: 2021,
-    imageUrl: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80",
-    beneficiaries: 5800,
-    location: "Pune, Maharashtra",
-    tags: ["food", "hunger", "community", "relief"],
-  },
-  {
-    id: 6,
-    title: "Sahara — Women Empowerment Initiative",
-    description: "A support and skill-building program for women survivors of domestic hardship, providing legal aid awareness, counselling, and economic opportunities.",
-    longDescription: "Sahara was built on the recognition that empowerment is not a single intervention — it is a sustained relationship of trust and support. We work with women who have faced domestic hardship, helping them navigate legal processes, access government schemes, and develop economic independence.\n\nOur program includes regular support group sessions, legal aid awareness workshops conducted in partnership with law students and practitioners, and skill-building sessions in handicrafts and home-based businesses.\n\nThe most powerful outcome has been community — women who once felt isolated finding solidarity and strength in each other.",
-    category: "Women Empowerment",
-    year: 2023,
-    imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
-    beneficiaries: 180,
-    location: "Kolhapur, Maharashtra",
-    tags: ["women", "empowerment", "legal", "support"],
-  },
-  {
     id: 1,
     title: "Old Age Home Visits",
     description: "A heartfelt visit to elderly residents at an old age home in Paschim Vihar, New Delhi — bringing joy, companionship, and essential supplies to 35+ seniors in collaboration with Project Aqidat.",
@@ -125,10 +65,10 @@ export const projects: Project[] = [
 ];
 
 export const projectStats: ProjectStats = {
-  totalProjects: 8,
-  totalBeneficiaries: 10645,
+  totalProjects: 3,
+  totalBeneficiaries: 285,
   yearsActive: 6,
-  volunteers: 120,
+  volunteers: 70,
 };
 
 export const galleryItems: GalleryItem[] = [
