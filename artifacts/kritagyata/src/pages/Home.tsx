@@ -1,9 +1,32 @@
+import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { Heart, Users, Globe } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { projects, projectStats } from "@/data";
+
+function CountUp({ target, suffix = "" }: { target: number; suffix?: string }) {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
+
+  useEffect(() => {
+    if (!isInView) return;
+    const duration = 1600;
+    const startTime = performance.now();
+    function tick(now: number) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.round(eased * target));
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }, [isInView, target]);
+
+  return <span ref={ref}>{count}{suffix}</span>;
+}
 
 const fadeUp = {
   hidden: { opacity: 0, y: 32 },
@@ -109,9 +132,9 @@ export default function Home() {
 
           <div className="grid grid-cols-3 gap-8">
             {[
-              { icon: Globe, value: stats.totalProjects, label: "Projects Completed", color: "text-[hsl(345,75%,28%)]" },
-              { icon: Users, value: "500+", label: "Lives Touched", color: "text-[hsl(37,70%,50%)]" },
-              { icon: Heart, value: "70+", label: "Active Volunteers", color: "text-[hsl(345,65%,35%)]" },
+              { icon: Globe, target: stats.totalProjects, suffix: "", label: "Projects Completed", color: "text-[hsl(345,75%,28%)]" },
+              { icon: Users, target: 500, suffix: "+", label: "Lives Touched", color: "text-[hsl(37,70%,50%)]" },
+              { icon: Heart, target: 70, suffix: "+", label: "Active Volunteers", color: "text-[hsl(345,65%,35%)]" },
             ].map((stat, i) => (
               <motion.div
                 key={stat.label}
@@ -123,7 +146,7 @@ export default function Home() {
               >
                 <stat.icon className={`w-8 h-8 ${stat.color}`} />
                 <span className={`font-serif text-4xl md:text-5xl font-semibold ${stat.color}`}>
-                  {stat.value}
+                  <CountUp target={stat.target} suffix={stat.suffix} />
                 </span>
                 <span className="text-muted-foreground text-sm tracking-wide">{stat.label}</span>
               </motion.div>
