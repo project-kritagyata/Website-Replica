@@ -7,6 +7,7 @@ import OurWork from "@/pages/OurWork";
 import ProjectDetail from "@/pages/ProjectDetail";
 import JoinUs from "@/pages/JoinUs";
 import Gallery from "@/pages/Gallery";
+import FloatingDonate from "@/components/FloatingDonate";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ function App() {
       <TooltipProvider>
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
           <Router />
+          <FloatingDonate />
         </WouterRouter>
       </TooltipProvider>
     </QueryClientProvider>
