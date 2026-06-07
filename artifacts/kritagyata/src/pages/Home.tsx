@@ -46,7 +46,7 @@ export default function Home() {
           <motion.img
             src="/logo.png"
             alt="Project Kritagyata"
-            className="w-36 h-36 object-contain drop-shadow-2xl"
+            className="w-36 h-36 object-contain rounded-full ring-4 ring-[hsl(37,70%,58%)] ring-offset-4 ring-offset-[hsl(345,60%,14%)] drop-shadow-2xl"
             variants={fadeUp}
             custom={0}
           />

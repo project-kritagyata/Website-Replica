@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="Logo" className="h-10 w-10 object-contain rounded-full" />
+              <img src="/logo.png" alt="Logo" className="h-10 w-10 object-contain rounded-full ring-2 ring-[hsl(37,70%,58%)] ring-offset-2 ring-offset-[hsl(345,60%,10%)]" />
               <span className="font-serif text-[hsl(36,30%,90%)] text-lg tracking-wide">
                 Project Kritagyata
               </span>

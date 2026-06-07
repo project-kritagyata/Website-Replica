@@ -63,7 +63,7 @@ export default function Navbar() {
               <img
                 src="/logo.png"
                 alt="Project Kritagyata Logo"
-                className="h-10 w-10 object-contain rounded-full"
+                className="h-10 w-10 object-contain rounded-full ring-2 ring-[hsl(37,70%,58%)] ring-offset-2 ring-offset-[hsl(345,60%,14%)]"
               />
               <span className="font-serif text-[hsl(36,30%,92%)] text-lg tracking-wide hidden sm:block">
                 Project Kritagyata
