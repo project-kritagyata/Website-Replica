@@ -52,19 +52,39 @@ export default function Footer() {
 
           <div>
             <h4 className="font-serif text-[hsl(36,30%,88%)] text-base mb-4 tracking-wide">
-              Connect
+              Contact Us
             </h4>
-            <p className="text-sm leading-relaxed text-[hsl(36,15%,65%)]">
-              Interested in volunteering or partnering with us? We'd love to hear from you.
-            </p>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScorLtLhXrCs-lU5G_D5fGcKuYwMyGMQ_DaUz8sEzSAPVOljQ/viewform?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-block text-sm text-[hsl(37,70%,58%)] hover:text-[hsl(37,70%,68%)] transition-colors font-medium"
-            >
-              Get Involved &rarr;
-            </a>
+            <ul className="flex flex-col gap-2.5">
+              <li>
+                <a
+                  href="mailto:projectkritagyata@gmail.com"
+                  className="text-sm hover:text-[hsl(37,70%,58%)] transition-colors duration-200"
+                >
+                  projectkritagyata@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/projectkritagyata"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-[hsl(37,70%,58%)] transition-colors duration-200 flex items-center gap-1.5"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                  @projectkritagyata
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScorLtLhXrCs-lU5G_D5fGcKuYwMyGMQ_DaUz8sEzSAPVOljQ/viewform?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-[hsl(37,70%,58%)] transition-colors duration-200"
+                >
+                  Join Us (Volunteer Form)
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
