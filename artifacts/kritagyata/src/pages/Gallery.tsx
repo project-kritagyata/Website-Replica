@@ -5,9 +5,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const photos = [
-  { id: 1, src: "/gallery-1.png", caption: "Moments of joy and connection" },
-  { id: 2, src: "/gallery-2.png", caption: "Kritagyata — Together we serve" },
-  { id: 3, src: "/gallery-3.png", caption: "Hands that care, hearts that give" },
+  { id: 1, src: "/slice_0.png", caption: "Moments of joy and connection" },
+  { id: 2, src: "/slice_1.png", caption: "Kritagyata — Together we serve" },
+  { id: 3, src: "/slice_2.png", caption: "Hands that care, hearts that give" },
 ];
 
 export default function Gallery() {
