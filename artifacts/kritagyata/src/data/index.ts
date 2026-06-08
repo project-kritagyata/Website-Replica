@@ -51,6 +51,18 @@ export const projects: Project[] = [
     tags: ["Distribution", "Food & Beverage", "Collaboration", "Project Aqidat", "Project Sukh", "Thrive Together", "Delhi"],
   },
   {
+    id: 9,
+    title: "Visit at Bharte Kadam NGO",
+    description: "A joyful and impactful visit to Bharte Kadam NGO, Sector 1, Rohini, New Delhi — spending meaningful time with underprivileged children, engaging them in activities and bringing warmth to 45+ young beneficiaries.",
+    longDescription: "On 28th December 2025, Project Kritagyata volunteers visited Bharte Kadam NGO at Sector 1, Rohini, New Delhi — a centre dedicated to educating and supporting children from underprivileged communities. The visit was filled with laughter, learning, and connection as our team engaged the children in interactive activities, distributed supplies, and spent quality time with each of them. Over 45 beneficiaries were touched by the drive. The energy and excitement in the children's eyes was an unforgettable reminder of the difference that showing up can make. This was one of Kritagyata's earliest drives, carried out just weeks after our launch — and it set the spirit for everything that followed.",
+    category: "Community Visit",
+    year: 2025,
+    imageUrl: "/bharte-kadam-visit.jpeg",
+    beneficiaries: 45,
+    location: "Bharte Kadam NGO, Sector 1, Rohini, New Delhi",
+    tags: ["Community Visit", "Children", "Education", "Rohini", "New Delhi", "2025"],
+  },
+  {
     id: 8,
     title: "Clothes & Food Distribution",
     description: "Project Kritagyata distributed clothes and food to underprivileged children and families at Sector 5, Rohini, New Delhi — bringing warmth, nourishment, and dignity to 50+ beneficiaries.",
@@ -65,8 +77,8 @@ export const projects: Project[] = [
 ];
 
 export const projectStats: ProjectStats = {
-  totalProjects: 3,
-  totalBeneficiaries: 285,
+  totalProjects: 4,
+  totalBeneficiaries: 330,
   yearsActive: 6,
   volunteers: 70,
 };
