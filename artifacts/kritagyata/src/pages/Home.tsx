@@ -226,7 +226,8 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
                 <p>
-                  Project Kritagyata was founded in <span className="text-[hsl(37,70%,65%)] font-medium">2025</span> by{" "}
+                  Project Kritagyata was launched on{" "}
+                  <span className="text-[hsl(37,70%,65%)] font-medium">11th November 2025</span> by{" "}
                   <span className="text-[hsl(36,30%,92%)] font-semibold">Nishtha Bhatia</span>, who was just{" "}
                   <span className="text-[hsl(37,70%,65%)] font-medium">16 years old</span> when she decided that gratitude
                   should be more than a feeling — it should be a force for change.
