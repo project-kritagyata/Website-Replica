@@ -36,7 +36,7 @@ export const projects: Project[] = [
     imageUrl: "/old-age-home-visit.png",
     beneficiaries: 35,
     location: "Paschim Vihar, New Delhi",
-    tags: ["Elder Care", "Community", "Collaboration", "Project Aqidat", "New Delhi"],
+    tags: ["Elder Care", "Community Visit", "Community", "Collaboration", "Project Aqidat", "New Delhi"],
   },
   {
     id: 7,

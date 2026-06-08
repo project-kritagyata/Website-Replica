@@ -14,7 +14,9 @@ export default function OurWork() {
   const filtered =
     activeCategory === "All"
       ? projects
-      : projects.filter((p) => p.category === activeCategory);
+      : projects.filter(
+          (p) => p.category === activeCategory || p.tags.includes(activeCategory),
+        );
 
   return (
     <div className="min-h-screen flex flex-col">
