@@ -3,5 +3,8 @@
   "outputDirectory": "dist",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  ],
+  "engines": {
+    "node": "22.x"
+  }
 }
